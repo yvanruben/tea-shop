@@ -1,52 +1,101 @@
-.wrapper {
-  padding-top: 30px;
-  }
+/* .container{
+max-width: 1177px;
+margin:0 auto;
+padding: 0 2rem;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Poppins:wght@100;200;400;700&display=swap');
+h1{font-size: 3.5rem !important;}
+
+h2{font-size: 2.7rem;}
+.section_padding{
+  padding: 10rem 0;
+}
+
+.txt-center{text-align: center !important;}
+.flex{
+  display: flex;
+}
+
+
+.color-white{
+  color:#fff;
+}
+.flex-center{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.grid{
+  display: grid;
+}
+
+/*sectio*/
+.section_title{
+  margin-bottom: 4rem;
+  color:var(--black-color);
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size:3rem
+}
+
+.section_padding{
+  padding: 10rem 0;
+}
+
+/*text /para*/
+.para_text{
+  line-height: 1.7;
+  font-weight: 300;
+  opacity: 0.95;
+  letter-spacing: 1px;
   
-  body h3 {
-  margin-bottom: 25px;
-  }
-  
-  .navbar-brand a {
-  color: #ffffff;
-  }
-  
-  .form-wrapper,
-  .table-wrapper {
-  max-width: 500px;
-  margin: 0 auto;
-  }
-  
-  .table-wrapper {
-  max-width: 700px;
-  }
-  
-  .edit-link {
-  padding: 7px 10px;
-  font-size: 0.875rem;
-  line-height: normal;
-  border-radius: 0.2rem;
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-  margin-right: 10px;
-  position: relative;
-  top: 1px;
-  }
-  
-  .edit-link:hover {
-  text-decoration: none;
-  color: #ffffff;
-  }
-  
-  /* Chrome, Safari, Edge, Opera */
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  }
-  
-  /* Firefox */
-  input[type=number] {
-  -moz-appearance: textfield;
-  }
-  
+}
+.text-center{
+  text-align: center;
+}
+
+
+.text_upper{
+  text-transform: uppercase;
+}
+.text_cap{
+  text-transform: capitalize;
+}
+
+.text-blue{
+  color:var(--robin--blue--color);
+
+}
+
+.text-dark{
+  color:var(--black-color);
+}
+
+.text-light{
+  color:var(--white-color);
+}
+
+.text-gray{
+  color:var(--grey-color);
+}
+
+/*font*/
+.fw_2{font-weight: 100;}
+.fw_2{font-weight: 200;}
+.fw_2{font-weight: 400;}
+.fw_2{font-weight: 500;}
+.fw_2{font-weight: 600;}
+.fw_2{font-weight: 700;}
+.fw_2{font-weight: 800;}
+
+
+.btn{
+  display: inline-block;
+  min-height: 54px;
+  line-height: 54px;
+  padding: 0 ;
+}

@@ -1,0 +1,43 @@
+.header{
+    min-height: 75vh;
+}
+.header__content{
+    min-height: calc(100vh - 106px);
+    flex-direction: column;
+}
+.header__title{
+    font-size: 10rem !important;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    
+    font-family: 'Castoro', serif;
+
+    margin-top:10vh;
+}
+.slogan{
+    font-size:1.5rem;
+}
+.header__content .para__text{
+    font-size:2.5rem;
+    padding: 3.6rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media(min-width: 992px){
+    .header__content{
+        flex-direction: row;
+    }
+    .header__content--right{
+        text-align: left;
+        width: 50%;
+    }
+    .header__content--left{
+        width: 50%;
+    }
+    .header__content--right .para__text{
+        margin-left: 0;
+    }
+}

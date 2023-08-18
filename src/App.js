@@ -1,83 +1,130 @@
-// Import React
-import React from "react";
+import './App.css';
+import Header from './components/Header/header';
+//import AboutUs from './components/AboutUs/AboutUs';
+import About from './pages/about';
+import gallery from './gallery';
+import Index from './index';
+import React, {useState} from 'react';
+import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
+// import LightGallery from 'lightgallery/react';
+// import 'lightgallery/css/lightgallery.css';
+// import 'lightgallery/css/lg-zoom.css';
+// import 'lightgallery/css/lg-thumbnail.css';
+// import lgThumbnail from 'lightgallery/plugins/thumbnail';
+// import lgZoom from 'lightgallery/plugins/zoom';
 
-// Import Bootstrap
-import { Nav, Navbar, Container, Row, Col }
-		from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
 
-// Import Custom CSS
-import "./App.css";
 
-// Import from react-router-dom
-import { BrowserRouter as Router, Switch,Routes,
-	Route, Link } from "react-router-dom";
+import Contact from "./components/Contact/Contact";
 
-// Import other React Component
-import CreateCustomer from
-	"./components/create-customer-component";
-import EditCustomer from
-	"./components/edit-customer-component";
-import CustomerList from
-	"./components/customer-list-component";
-// import EditCustomer from "./components/edit-customer-component";
-// import CustomerList from "./components/customer-list-component";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// App Component
-const App = () => {
-return (
-	<Router>
-	<div className="App">
-		<header className="App-header">
-		<Navbar bg="dark" variant="dark">
-			<Container>
-			<Navbar.Brand>
-				<Link to={"/create-customer"}
-				className="nav-link">
-				React MERN Stack App
-				</Link>
-			</Navbar.Brand>
+import { Navbar } from 'react-bootstrap';
+import Home from './pages/home';
+import Gallery from './gallery';
 
-			<Nav className="justify-content-end">
-				<Nav>
-				<Link to={"/create-customer"}
-					className="nav-link">
-					Create Customer
-				</Link>
-				</Nav>
+function App() {
 
-				<Nav>
-				<Link to={"/customer-list"}
-					className="nav-link">
-					Customer List
-				</Link>
-				</Nav>
-			</Nav>
-			</Container>
-		</Navbar>
-		</header>
+  return (
+    
+    <div className="holder">
+       
+       {/* <Title/> */}
+      <Router>
+      
+      <Header /> 
+      
 
-		<Container>
-		<Row>
-			<Col md={12}>
-			<div className="wrapper">
-				<Switch>
-				<Route exact path="/"
-					component={CreateCustomer} />
-				<Route path="/create-customer"
-					component={CreateCustomer} />
-				<Route path="/edit-customer/:id"
-					component={EditCustomer} />
-				<Route path="/customer-list"
-					component={CustomerList} />
-				</Switch>
-			</div>
-			</Col>
-		</Row>
-		</Container>
-	</div>
-	</Router>
-);
-};
+      <Routes>
+
+      <Route path="/index" element={ <Home /> }/>
+      <Route path="" element={ <Home /> }/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/gallery" element={<Gallery/>}/>
+      <Route path="/home" element={<Home/>} />
+      <Route path="/contact" element={<Contact/>} />
+      </Routes>
+
+    </Router>
+     
+  
+     
+    </div>
+  );
+}
 
 export default App;
+
+
+
+
+// import './App.css';
+// import Header from './components/Header/header';
+// //import AboutUs from './components/AboutUs/AboutUs';
+// import About from './pages/about';
+// import Title from './title';
+// import Index from './index';
+// import React, {useState} from 'react';
+// import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
+// import LightGallery from 'lightgallery/react';
+// import 'lightgallery/css/lightgallery.css';
+// import 'lightgallery/css/lg-zoom.css';
+// import 'lightgallery/css/lg-thumbnail.css';
+// import lgThumbnail from 'lightgallery/plugins/thumbnail';
+// import lgZoom from 'lightgallery/plugins/zoom';
+
+
+
+// import Contact from "./components/Contact/Contact";
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import { Navbar } from 'react-bootstrap';
+// import Home from './pages/home';
+
+// function App() {
+
+//   return (
+    
+//     <div className="holder">
+//        <LightGallery
+//        speed={500}
+//        plugins={[]}>
+       
+//         <a href="https://theme767-coffee-store.myshopify.com/cdn/shop/files/img_text_908x596_crop_top.png?v=1614334832">
+//           <img className="thumbnail-img" src="https://theme767-coffee-store.myshopify.com/cdn/shop/files/img_text_908x596_crop_top.png?v=1614334832" alt="imghttps1"/></a>
+
+//         {/* <img src={require('../components/assets/images/product1.webp')} /> */}
+
+
+//        </LightGallery>
+//        {/* <Title/> */}
+//       <Router>
+      
+//       <Header /> 
+      
+
+//       <Routes>
+
+//       <Route path="/index" element={ <Home /> }/>
+//       <Route path="" element={ <Home /> }/>
+//       <Route path="/about" element={<About/>}/>
+//       <Route path="/title" element={<Title/>}/>
+//       <Route path="/home" element={<Home/>} />
+//       <Route path="/contact" element={<Contact/>} />
+//       </Routes>
+
+//     </Router>
+     
+  
+     
+//     </div>
+//   );
+// }
+
+
+
+// export default App;
+
+
+
