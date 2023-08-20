@@ -6,6 +6,7 @@ export const  About =()=>{
 	return(
 		
 		<div class="container">
+			<div class="row-section">
 		<h1>ABOUT US</h1>
 
 		<b>Welcome to "Le Salon de thé" - Your Ultimate Destination for Exquisite Tea and Coffee!</b>
@@ -25,6 +26,7 @@ export const  About =()=>{
 <p>We believe in fostering a community that shares our passion for tea and coffee. As advocates of responsible sourcing and ethical practices, we work closely with growers and producers who uphold sustainable methods. By supporting us, you become a part of this endeavor, contributing to the well-being of both our planet and the people who nurture these exceptional crops.</p>
 
 		
+		</div>
 		</div>
 		
 		

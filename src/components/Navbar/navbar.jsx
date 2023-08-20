@@ -34,9 +34,9 @@ const Navbar = () => {
                              <li><Link to="/contact">CONTACT</Link></li> 
 						</div>
 
-						<div className="nav__item">
+						{/* <div className="nav__item">
                              <li><Link to="/gallery">GALLERY</Link></li> 
-						</div>
+						</div> */}
                       
                         
                         
@@ -49,29 +49,19 @@ const Navbar = () => {
                             <FaTimes size = {32} />
                         </button>
                         <ul className="navbar__nav--smallscreen text__light">
-                            <li className = "nav__item">
-                                <a href = "#home" className="nav__link text__upper fw__6 nav__active text__light">home</a>
-                            </li>
+						<div className="nav__item">
+                             <li ><Link to="/home">HOME</Link></li> 
+						</div>
+						<div className="nav__item">
+                             <li ><Link to="/about">ABOUT</Link></li> 
+						</div>
+
+						<div className="nav__item">
+                             <li><Link to="/contact">CONTACT</Link></li> 
+						</div>
                             
 
-							<li><Link to="/about">ABOUT</Link></li>
-
 							
-                            <li className = "nav__item">
-                                <a href = "#work" className="nav__link text__upper fw__6 text__light">work</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">process</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">services</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">testimonials</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">contact</a>
-                            </li>
                         </ul>
                     </div>
                 )}

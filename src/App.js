@@ -2,26 +2,16 @@ import './App.css';
 import Header from './components/Header/header';
 //import AboutUs from './components/AboutUs/AboutUs';
 import About from './pages/about';
-import gallery from './gallery';
-import Index from './index';
-import React, {useState} from 'react';
+
+import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
-// import LightGallery from 'lightgallery/react';
-// import 'lightgallery/css/lightgallery.css';
-// import 'lightgallery/css/lg-zoom.css';
-// import 'lightgallery/css/lg-thumbnail.css';
-// import lgThumbnail from 'lightgallery/plugins/thumbnail';
-// import lgZoom from 'lightgallery/plugins/zoom';
-
-
-
-import Contact from "./components/Contact/Contact";
+import Footer from './components/Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Navbar } from 'react-bootstrap';
 import Home from './pages/home';
-import Gallery from './gallery';
+ import Gallery from './gallery';
+ import Contact from './pages/contact';
 
 function App() {
 
@@ -34,6 +24,7 @@ function App() {
       
       <Header /> 
       
+      
 
       <Routes>
 
@@ -43,17 +34,87 @@ function App() {
       <Route path="/gallery" element={<Gallery/>}/>
       <Route path="/home" element={<Home/>} />
       <Route path="/contact" element={<Contact/>} />
+      
+
+
       </Routes>
 
     </Router>
+    <Footer /> 
      
   
      
     </div>
+
+
+
   );
+
+  // const [newsletters, setnewsletters] = useState(false);
+  // useEffect(() => {
+  //   getnewsletter();
+  // }, []);
+  // function getnewsletter() {
+  //   fetch('http://localhost:3001')
+  //     .then(response => {
+  //       return response.text();
+  //     })
+  //     .then(data => {
+  //       setnewsletters(data);
+  //     });
+  // }
+  // function createnewsletter() {
+  //   let name = prompt('Enter newsletter name');
+  //   let email = prompt('Enter newsletter email');
+  //   fetch('http://localhost:3001/newsletters', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({name, email}),
+  //   })
+  //     .then(response => {
+  //       return response.text();
+  //     })
+  //     .then(data => {
+  //       alert(data);
+  //       getnewsletter();
+  //     });
+  // }
+  // function deletenewsletter() {
+  //   let id = prompt('Enter newsletter id');
+  //   fetch(`http://localhost:3001/newsletters/${id}`, {
+  //     method: 'DELETE',
+  //   })
+  //     .then(response => {
+  //       return response.text();
+  //     })
+  //     .then(data => {
+  //       alert(data);
+  //       getnewsletter();
+  //     });
+  // }
+  // return (
+  //   <div>
+  //     {newsletters ? newsletters : 'There is no newsletter data available'}
+  //     <br />
+  //     <button onClick={createnewsletter}>Add newsletter</button>
+  //     <br />
+  //     <button onClick={deletenewsletter}>Delete newsletter</button>
+  //   </div>
+  // );
 }
 
+
+
+  
+
+
 export default App;
+
+
+
+
 
 
 
