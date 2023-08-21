@@ -1,6 +1,10 @@
 import header_bg from "../components/assets/images/bckgrd1.webp";
 import logo from "../components/assets/images/salon logo.png";
 import product1 from "../components/assets/images/product1.webp";
+import bread from "../components/assets/images/bread.jpg";
+import burger from "../components/assets/images/burger.jpg";
+import pancake from "../components/assets/images/pancake.jpg";
+import tea from "../components/assets/images/tea.jpg";
 import signature from "../components/assets/images/signature.png";
 import icon_archer from "../components/assets/images/icon-archer.png"; 
 import icon_briefcase from "../components/assets/images/icon-briefcase.png";
@@ -30,6 +34,10 @@ export default{
     header_bg,
     logo,
     product1,
+    bread,
+    burger,
+    pancake,
+    tea,
     signature,
     icon_archer,
     icon_briefcase,

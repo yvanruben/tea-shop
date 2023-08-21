@@ -11,15 +11,38 @@ export const CarouselBootstrap =()=>{
 
 			<div>
       <Carousel>
-        <Carousel.Item interval={5000}>
-          <img className="d-block w-200" src={images.product1} alt="Image One"/>
+        <Carousel.Item interval={4500}>
+          <img className="d-block w-200" src={images.bread} alt="Image One"/>
           <Carousel.Caption>
             {/* <h3>Label for first slide</h3>
             <p>Sample Text for Image One</p> */}
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2500}>
-        <img className="d-block w-200" src={images.product1} alt="Image One"/>
+
+        <Carousel.Item interval={4500}>
+        <img className="d-block w-200" src={images.tea} alt="Image One"/>
+
+          <Carousel.Caption>
+            {/* <h3>Label for second slide</h3>
+            <p>Sample Text for Image Two</p> */}
+          </Carousel.Caption>
+        </Carousel.Item>
+
+
+
+
+
+        <Carousel.Item interval={4500}>
+        <img className="d-block w-200" src={images.burger} alt="Image One"/>
+
+          <Carousel.Caption>
+            {/* <h3>Label for second slide</h3>
+            <p>Sample Text for Image Two</p> */}
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={4500}>
+        <img className="d-block w-200" src={images.pancake} alt="Image One"/>
 
           <Carousel.Caption>
             {/* <h3>Label for second slide</h3>
