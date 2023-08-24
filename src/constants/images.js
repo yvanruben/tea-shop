@@ -5,6 +5,8 @@ import bread from "../components/assets/images/bread.jpg";
 import burger from "../components/assets/images/burger.jpg";
 import pancake from "../components/assets/images/pancake.jpg";
 import tea from "../components/assets/images/tea.jpg";
+import wedding from "../components/assets/images/wedding-cake.jpg"
+import custom_cake from "../components/assets/images/custom-cake.jpg"
 import signature from "../components/assets/images/signature.png";
 import icon_archer from "../components/assets/images/icon-archer.png"; 
 import icon_briefcase from "../components/assets/images/icon-briefcase.png";
@@ -38,6 +40,8 @@ export default{
     burger,
     pancake,
     tea,
+    wedding,
+    custom_cake,
     signature,
     icon_archer,
     icon_briefcase,

@@ -11,6 +11,7 @@ h1{font-size: 3.5rem !important;}
 h2{font-size: 2.7rem;}
 .section_padding{
   padding: 10rem 0;
+  color:var(--black-color) !important;
 }
 
 .txt-center{text-align: center !important;}

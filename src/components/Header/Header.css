@@ -1,5 +1,5 @@
 .header{
-    min-height: 75vh;
+    height: 80vh;
 }
 .header__content{
     min-height: calc(100vh - 106px);
