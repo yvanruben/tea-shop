@@ -6,6 +6,8 @@
     width: 150px;
 }
 
+
+
 .nav__item a{
     font-size: 0.85rem !important;
     color: var(--white-color) !important;
@@ -40,6 +42,7 @@ text-align: center;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     font-family: 'Castoro', serif;
+    padding-top: 1.5rem;
 }
 
 .brand__and__toggler{

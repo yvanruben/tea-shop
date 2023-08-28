@@ -1,10 +1,8 @@
-.header{
-    height: 80vh;
-}
-.header__content{
+
+/* .header__content{
     min-height: calc(100vh - 106px);
     flex-direction: column;
-}
+} */
 .header__title{
     font-size: 10rem !important;
     line-height: 1em;
@@ -13,8 +11,6 @@
     text-transform: none;
     
     font-family: 'Castoro', serif;
-
-    margin-top:14.5vh;
 }
 .slogan{
     font-size:1.5rem;

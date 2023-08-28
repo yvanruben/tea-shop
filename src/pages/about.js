@@ -5,7 +5,7 @@ export const  About =()=>{
 	
 	return(
 		
-		<div class="container">
+		<div class="container" id="about">
 			<div class="row-section">
 		<h1>ABOUT US</h1>
 

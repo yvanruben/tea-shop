@@ -10,23 +10,22 @@ const Header = () => (
     //     background: `url(${images.header_bg}) center/cover no-repeat`
     // }}>
    <div className="header">
-        <video src={video1} autoPlay loop muted id="video"></video>
+    <Navbar />
+    <div className="header-content">
+            <video className="video-backgrd" src={video1} autoPlay loop muted id="video"></video>
 
-	
-	 
-
-        <Navbar />
-
-        <div className="container">
-            <div className="row">
-               
-                <div className="col-md-12 info txt-center">
-                    <h1 className=" header__title color-white">Tea time.</h1>
-                    <p className="color-white slogan ">Sip, Savor, and Share the Moment: Embrace the Tranquility of Tea Time</p>
-                    
+            <div className="container content">
+                <div className="row">
+                
+                    <div className="col-md-12 info txt-center">
+                        <h1 className=" header__title color-white">Tea time.</h1>
+                        <p className="color-white slogan ">Sip, Savor, and Share the Moment: Embrace the Tranquility of Tea Time</p>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+    </div>
+       
     </div>
 )
 

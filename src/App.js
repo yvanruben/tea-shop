@@ -50,59 +50,7 @@ function App() {
 
   );
 
-  // const [newsletters, setnewsletters] = useState(false);
-  // useEffect(() => {
-  //   getnewsletter();
-  // }, []);
-  // function getnewsletter() {
-  //   fetch('http://localhost:3001')
-  //     .then(response => {
-  //       return response.text();
-  //     })
-  //     .then(data => {
-  //       setnewsletters(data);
-  //     });
-  // }
-  // function createnewsletter() {
-  //   let name = prompt('Enter newsletter name');
-  //   let email = prompt('Enter newsletter email');
-  //   fetch('http://localhost:3001/newsletters', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({name, email}),
-  //   })
-  //     .then(response => {
-  //       return response.text();
-  //     })
-  //     .then(data => {
-  //       alert(data);
-  //       getnewsletter();
-  //     });
-  // }
-  // function deletenewsletter() {
-  //   let id = prompt('Enter newsletter id');
-  //   fetch(`http://localhost:3001/newsletters/${id}`, {
-  //     method: 'DELETE',
-  //   })
-  //     .then(response => {
-  //       return response.text();
-  //     })
-  //     .then(data => {
-  //       alert(data);
-  //       getnewsletter();
-  //     });
-  // }
-  // return (
-  //   <div>
-  //     {newsletters ? newsletters : 'There is no newsletter data available'}
-  //     <br />
-  //     <button onClick={createnewsletter}>Add newsletter</button>
-  //     <br />
-  //     <button onClick={deletenewsletter}>Delete newsletter</button>
-  //   </div>
-  // );
+  
 }
 
 

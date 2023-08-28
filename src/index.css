@@ -51,6 +51,7 @@ button{
 .yellowdish-color{
   color: var(--yellow-color);
   font-family: 'Castoro', serif;
+  margin-bottom:0;
 }
 
 input, textarea{
@@ -78,7 +79,7 @@ input, textarea{
   background-color: yellowgreen;
 }
 .row-section{
-  margin:7rem 2rem !important ;
+  margin:10rem 2rem !important ;
 }
 .inline{
   display: inline-flex;
@@ -137,13 +138,27 @@ transition: all ease-in-out 0.5s !important;
 
 } */
 
-.benefit-backgrd{background-color: rgb(65, 80, 23) !important;
-color:var(--white-color)};
+.benefit-backgrd{
+  /* background-color: rgb(65, 80, 23) !important; */
+  background: url(./components/assets/images/parralax1.jpg) !important;
+  min-height: 450px !important;
+  background-attachment: fixed !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  backdrop-filter:brightness(0.75) !important;
+  display: flex;
+    justify-content: center;
+color:var(--white-color);
+/* position:fixed; */
+}
+
+.benefit-content{max-width:700px !important;}
 
 
 
 .new-arrival-txt{
-  padding-left:3.5rem !important;
+  padding-left:5rem !important;
 }
 
 @media (max-width:700px){
@@ -189,11 +204,39 @@ button.navbar__open--btn.text__light {
   padding: 1rem;
 }
 
+.header{
+  padding-top: 1rem;
+  position: relative;
+
+ height: 90vh;
+ /* width: 70vw; */
+ /* margin: 0 auto; */
+  
+}
+.header-content{
+ display: grid;
+ place-items: center;
+ margin: 0 auto;
+ height: 100%;
+ margin-top:-4.5%;
+}
+
 #video{
-   position: absolute !important; 
-  background-size: cover !important;
-  width:100% !important;
-   z-index:-1;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::-webkit-media-controls {
+     display:none !important;
+  }
    filter: brightness(0.5);
    
+}
+.content,.navbar{
+z-index: 1;
 }
